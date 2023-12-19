@@ -1,0 +1,99 @@
+.check-container{
+    display: flex;
+}
+/*탭 css*/
+.check-container .react-tabs {
+    font-family: 'Arial', sans-serif;
+    padding : 3px;
+  }
+.check-container .react-tabs__tab-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+.check-container .react-tabs__tab {
+    padding: 5px 5px;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    margin-right: 5px;
+    user-select: none;
+  }
+.check-container .react-tabs__tab--selected {
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    background-color: #fff;
+  }
+.check-container .react-tabs__tab-panel {
+    display: none;
+  }
+.check-container .react-tabs__tab-panel--selected {
+    display: block;
+    padding: 10px;
+    width: 740px;
+    height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #fff;
+  }
+
+
+.colorpicker-palette-button{
+    justify-content: space-between;
+    flex-direction: column;
+}
+  
+.check-colorpicker{    
+    padding:20px;
+    margin-left:110px;
+}
+#check-palette-wrapper {
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px 90px; /* 각 컬럼의 크기를 100px로 고정 */
+    grid-template-rows: 140px; /* 행의 크기를 150px로 고정 */
+    grid-gap : 1px;
+}
+.check-palette-color-wrapper{
+    padding: 1.2rem;
+}
+.check-palette-color{
+    border : 1px solid #aaa;
+    width: 90px;
+    height: 140px;
+    color: white;
+    cursor: pointer;
+    color: #aaa;
+}
+.big-border{
+    border: 2px solid black !important;
+    cursor:pointer;
+}
+.check-button-part{
+    margin-top:25px;
+    margin-left: 90%;
+}
+
+.checklist{
+    margin-left:2%;
+}
+
+.color-random-button{
+    margin-bottom: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns with equal width */
+    grid-template-rows: repeat(3, 1fr); /* 3 rows with equal height */
+    gap: 10px; /* Adjust the gap between grid items */
+}
+
+.grid-item {
+    border: 1px solid #ddd; /* Add borders to grid items for better visibility */
+    padding: 10px; /* Add padding to grid items */
+}

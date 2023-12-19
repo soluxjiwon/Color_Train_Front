@@ -1,0 +1,86 @@
+/*탭 관련 CSS*/
+.react-tabs {
+    font-family: 'Arial', sans-serif;
+    padding : 5px;
+  }
+.react-tabs__tab-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+.react-tabs__tab {
+    padding: 5px 5px;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    margin-right: 5px;
+    user-select: none;
+  }
+.react-tabs__tab--selected {
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    background-color: #fff;
+  }
+.react-tabs__tab-panel {
+    display: none;
+  }
+.react-tabs__tab-panel--selected {
+    display: block;
+    padding: 15px;
+    width: 1110px;
+    height: 320px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #fff;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px; 
+}
+
+/*버튼CSS*/
+.tagButton{
+  width : 150px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: #fff;
+  border-color: #FE5E54;
+  border-style:solid;
+}
+.tagButton.selected{
+  background-color:  #FE5E54;
+  color: #fff;
+}
+.tagButton-part{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*태그리스트, 선택한 태그 구분선*/
+.tags-selectedTags-divider{
+  background-color: #ccc;
+  width: 100%;
+  height: 0.5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.selectedTags-part{
+  display : flex;
+}
+
+.selectedTag{
+  border-radius: 40px;
+  border-style:solid;
+  padding : 10px;
+  margin: 5px;
+  background-color:  #FE5E54;
+  color: #fff;
+}

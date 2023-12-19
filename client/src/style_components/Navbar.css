@@ -1,0 +1,77 @@
+nav {
+    background-color: white; 
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+  }
+  
+  /*navbar 하단 구분선*/
+  .nav-divider {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+  }
+
+   /*메뉴 간 구분선*/
+  .menu-divider {
+    width: 1px;
+    height: 20px;
+    background-color: #ccc;
+    margin: 0 40px;
+  }
+
+  /* 로고 스타일 */
+  .logo {
+    font-size: 10px;
+  }
+  
+  .logo a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: black;
+  }
+  
+  /* 메뉴 스타일 */
+  .menu {
+    list-style: none; /* 리스트 마커 제거 */
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 10px;
+    font-weight:500; /* 글껍게 설정 */
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500; /* 글껍게 설정 */
+  }
+  
+  /* 로그인 및 회원가입 버튼 스타일 */
+  .auth button {
+    background-color: #FE5E54;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer; /* 커서를 포인터로 변경하여 클릭 가능한 것처럼 보이게*/
+ 
+  }
+  
+  /* 버튼 호버(마우스 오버) 효과 */
+  .auth button:hover {
+    background-color: #FFA49E;
+  }
+  
+  /* 로그인 및 회원가입 링크 스타일 */
+  .auth a {
+    text-decoration: none; /* 링크 밑줄 제거 */
+    color: #fff;
+  }

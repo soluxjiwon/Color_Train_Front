@@ -1,0 +1,93 @@
+.container{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+/*이미지업로드*/
+.box-decoration {
+    padding: 40px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:5%;
+}
+
+.image-upload-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.image-upload-button:hover {
+    background-color: #3e8e41;
+}
+.img-display {
+    padding : 1px;
+    object-fit: contain;
+    width: 95%;
+    height: 95%;
+}
+
+/*eyedropper이미지*/
+.eyedropper-button{
+    height : 25px;
+    width : 25px;
+    border : 1px solid;
+    border-radius : 5px;
+    padding : 5px;
+    cursor: pointer;
+    
+}
+.eyedropper-button:hover{
+    background: #EBEBEB;
+    color: black;
+}
+
+/*팔레트*/
+#wrapper {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-gap: 10px; 
+    align-items: center;
+}
+.palette-color-wrapper{
+    padding: 1.2rem;
+}
+
+.palette-color{
+    border : 1px solid #aaa;
+    width: 100px;
+    height: 150px;
+    color: white;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.big-border{
+    border: 1px solid black !important;
+    cursor: pointer;
+}
+
+/*구분선*/
+.image-palette-divider {
+    background-color: #ccc;
+    display: flex;
+    width: 1px;
+    height: 500px;
+  }
+
+  /*저장, 점검버튼*/
+.button-image {
+    padding-top:5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    position: absolute; /* 위치 지정을 위해 절대 위치 사용 */
+    right: 12%; /* 오른쪽 여백을 조절하여 위치 지정 */
+    bottom: 90px; /* 아래쪽 여백을 조절하여 위치 지정 */
+}

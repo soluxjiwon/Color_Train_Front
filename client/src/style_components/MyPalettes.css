@@ -1,0 +1,21 @@
+.MyPalettes-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 한 행당 4개의 칸을 만듭니다. */
+    grid-gap: 15px;
+    margin-top: 20px;
+}
+.MyPalettes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.MyPalettes-colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.MyPalettes-color{
+    width: 55px;
+    height: 90px;
+    border: 0.2px solid #e7e7e7;
+  }

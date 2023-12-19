@@ -1,0 +1,58 @@
+
+.container{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+/*컬러픽커, 옵션*/
+.colorpicker-option{
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+.option{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left : 10px;
+}
+.option label{
+  margin-bottom: 3px;
+  width: 80px;
+  height: 30px;
+  padding: 10px;
+}
+
+/*팔레트*/
+.color-palettes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-right: 10%;
+}
+.color-palette {
+    width: 100px;
+    height: 150px;
+    border: 1px solid #aaa;
+  }
+
+/*구분선*/
+.image-palette-divider {
+    background-color: #ccc;
+    display: flex;
+    width: 1px;
+    height: 500px;
+    margin-left: 90px;
+}
+
+/*저장,점검 버튼*/
+.button-one {
+  padding-top:5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  position: absolute; /* 위치 지정을 위해 절대 위치 사용 */
+  right: 10%; /* 오른쪽 여백을 조절하여 위치 지정 */
+  bottom: 90px; /* 아래쪽 여백을 조절하여 위치 지정 */
+}

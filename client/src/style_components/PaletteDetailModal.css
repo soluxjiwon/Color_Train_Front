@@ -1,0 +1,14 @@
+.Detail-Palette{
+    display: flex;
+    flex-direction: column;
+}
+.Detail-Palette-Colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Detail-Palette-Color{
+    width: 55px;
+    height: 90px;
+    border: 0.2px solid #e7e7e7;
+}
