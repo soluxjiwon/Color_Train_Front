@@ -74,7 +74,7 @@ function ImageColorPick(){
     }, []);
 
     //eyedropper
-    const useEyeDropper = (hexColors, setHexColors, setError) => {
+   /* const useEyeDropper = (hexColors, setHexColors, setError) => {
       return () => {
         const resultElement = document.getElementById('result');
   
@@ -102,7 +102,7 @@ function ImageColorPick(){
       };
     };
   
-    const handleEyeDropperClick = useEyeDropper(hexColors, setHexColors, setError);
+    const handleEyeDropperClick = useEyeDropper(hexColors, setHexColors, setError);*/
   
     /*const hexColorsList = hexColors.join(',');*/
     
@@ -128,7 +128,7 @@ function ImageColorPick(){
           <button className="image-upload-button" onClick={handleUpload}>upload</button>
         </div>
         <div>
-          <img className="eyedropper-button" src="./eyedropper.png" alt="eyedropper" onClick={handleEyeDropperClick}/>
+          <img className="eyedropper-button" src="./eyedropper.png" alt="eyedropper" /*onClick={handleEyeDropperClick}*//>
         </div>
 
       </div>
