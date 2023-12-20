@@ -62,7 +62,7 @@ function Signup(){
         //https://web-color-train-front-5r422alqcjtf9i.sel4.cloudtype.app/
         //https://port-0-color-train-back-5r422alqcjtf9i.sel4.cloudtype.app/
         axios
-        .post('https://color-train-back:5000/api/users/register', {
+        .post('http://color-train-back:5000/api/users/register', {
           name: nickname,
           email: email,
           password: pw,
