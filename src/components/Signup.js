@@ -58,9 +58,11 @@ function Signup(){
           alert("비밀번호가 일치하지 않습니다.");
           return;
         }
-
+        //http://localhost:5000/api/users/register
+        //https://web-color-train-front-5r422alqcjtf9i.sel4.cloudtype.app/
+        //https://port-0-color-train-back-5r422alqcjtf9i.sel4.cloudtype.app/
         axios
-        .post('http://localhost:5000/api/users/register', {
+        .post('https://port-0-color-train-back-5r422alqcjtf9i.sel4.cloudtype.app//api/users/register', {
           name: nickname,
           email: email,
           password: pw,
