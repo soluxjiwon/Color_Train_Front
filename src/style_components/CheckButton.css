@@ -1,0 +1,229 @@
+/*점검 버튼 css*/
+.checkbutton{
+    background-color: #FE5E54;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Pretendard Medium';
+}
+.closebutton{
+    background-color: #FE5E54;
+    color: #fff;
+    border: none;
+    padding: 2px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/*선택한 팔레트 출력*/
+.checkButton-palette-container{
+    display: flex;
+    align-items: center;
+}
+
+.checkButton-palette-color{
+    border : 1px solid #e7e7e7;
+    width: 75px;
+    height: 75px;
+}
+
+/*색상코드*/
+.checkButton-palette-codes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checkButton-palette-Code{
+    width: 75px;
+    padding:2px;
+    font-family: 'Pretendard Regular';
+    background-color: #e7e7e7;
+    margin-top:3px;
+}
+.ColorCodeText-on-check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+
+.modal-check{
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    margin-top:3px;
+
+}
+
+/*탭 css*/
+.modal-check .react-tabs{
+    font-family:'Pretendard SemiBold';
+    padding : 5px;
+}
+.modal-check .react-tabs__tab-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+.modal-check .react-tabs__tab {
+    padding: 5px 5px;
+    margin: 0;
+    cursor: pointer;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    margin-right: 5px;
+    user-select: none;
+    width : 34%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:15px;
+    font-family:'Pretendard SemiBold';
+  }
+.modal-check .react-tabs__tab--selected {
+    border: 1.5px solid #d3d3d3;
+    border-bottom-color: transparent;
+    background-color: #d3d3d3;
+  }
+.modal-check .react-tabs__tab-panel {
+    display: none;
+  }
+.modal-check .react-tabs__tab-panel--selected {
+    display: block;
+    padding: 10px;
+    width: 1100px;
+    height:297px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #fff;
+}
+
+/*템플릿*/
+.random-button-part{
+    margin-left:5%;
+    margin-top:15%;
+}
+.random-button{
+    margin-bottom: 5px;
+    background-color: #FE5E54;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Pretendard Medium';
+}
+.random-button-explain{
+    padding: 15px 20px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    display: none;
+    font-family: 'Pretendard Regular';
+    font-size:13px;
+}
+.random-button-part:hover .random-button-explain {
+    display: block;
+  }
+.example-part{
+    display:flex;
+    justify-content: center;
+}
+.examples button{
+    border :solid 1.5px #FFBCAE;
+    background-color: #fff;
+    padding: 5px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 30px;
+    font-family:'Pretendard Medium';
+}
+.examples button.selected{
+    background-color:#FFBCAE;
+    border :solid 1px #FFBCAE;
+}
+
+
+/*색각이상자 점검 파트*/
+.rgblind{
+    padding:10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.rgblind-title{
+    margin-top:5px;
+    margin-bottom:5px;
+    font-family: 'Pretendard Medium';
+    font-size:18px;
+}
+
+/*고대비 점검*/
+.contrast-palette-color.selected {
+    border: 2px solid black; /* 검정색 테두리 추가 */
+}
+.contrast-palette-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 25%;
+}
+.contrast-palette-color{
+    width: 100px;
+    height: 100px;
+    border : 1.2px solid #e7e7e7;
+}
+.contrastRatios-part{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.contrastRatio{
+    margin-top:5px;
+    margin-left:30px;
+    margin-right:30px;
+    font-family: 'Pretendard Medium';
+    font-size:20px;
+}
+.question{
+    display:flex;
+    margin-top:3%;
+    margin-left:25%;
+    margin-bottom:2%;
+}
+.question-Explain{
+    padding: 11px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    display: none;
+    font-size:13px
+}
+.question-explain-title{
+    font-family: 'Pretendard SemiBold';
+    font-size:16px;
+    margin-bottom:0.5%;
+    margin-top:3%;
+}
+.question-explain-part{
+    font-family:'Pretendard Regular';
+    font-size:13px;
+    margin-bottom:3%;
+    text-align:center;
+
+}
+.question:hover .question-Explain{
+    display: block;
+}

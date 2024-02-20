@@ -1,0 +1,23 @@
+/*create창의 navbar 디자인*/
+
+.navbar{
+  display: flex;
+  align-items: center;
+  margin-top : 1%;
+  margin-left: 2%;
+
+}
+.navbar button{
+    border :solid 1.5px #FFBCAE;
+    background-color: #fff;
+    padding: 5px 20px;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 30px;
+    font-family:'Pretendard Medium';
+}
+.navbar button.selected{
+    background-color:#FFBCAE;
+    border :solid 1px #FFBCAE;
+}

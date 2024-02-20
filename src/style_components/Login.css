@@ -1,0 +1,101 @@
+.loginPage{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.logoPart{
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+}
+.logoImg{
+    width:65%;
+}
+.loginPart{
+    width : 60%;
+    height: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+
+.titleWrap{
+    margin-top: 30px;
+    font-size: 25px;
+    font-family:'Pretendard Bold';
+}
+
+.contentWrap{
+    margin-top: 45px;
+}
+
+.inputTitle{
+    font-size:16px;
+    font-family:'Pretendard SemiBold';
+    margin-top:10px;
+}
+
+.inputWrap{
+    display:flex;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom:10px;
+    background-color: white;
+    border: 1px solid #e2e0c0;
+}
+
+.inputWrap:focus-within{
+    border: 1px solid #BCBCBC;
+}
+
+.input{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-family:'Pretendard Light';
+}
+
+.errorMessageWrap{
+    margin-top: 8px;
+    color: #ef0000;
+    font-size: 12px;
+    font-family:'Pretendard Light';
+}
+
+.loginButton{
+    width:100%;
+    height: 35px;
+    border: none;
+    font-family:'Pretendard SemiBold';
+    color: white;
+    background-color:#FE5E54;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.loginButton:disabled{
+    background-color: #dadada;
+    color: white;
+}
+
+.singupButtonPart{
+    margin-top:5px;
+    font-family:'Pretendard Regular';
+    margin-left:8%;
+}
+
+.loginSignupButton{
+    width:30%;
+    height:35px;
+    border: none;
+    font-family:'Pretendard SemiBold';;
+    color: white;
+    background-color:#FE5E54;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left:25px;
+}

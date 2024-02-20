@@ -1,0 +1,281 @@
+.check-container{
+    display: flex;
+}
+/*탭 css*/
+.check-container .react-tabs {
+    font-family:'Pretendard SemiBold';
+    padding : 5px;
+  }
+.check-container .react-tabs__tab-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+.check-container .react-tabs__tab {
+    padding: 5px 5px;
+    margin: 0;
+    cursor: pointer;
+    border: 1.5px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    margin-right: 5px;
+    user-select: none;
+    width : 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+.check-container .react-tabs__tab--selected {
+    border: 1.5px solid #d3d3d3;
+    border-bottom-color: transparent;
+    background-color: #d3d3d3;
+  }
+.check-container .react-tabs__tab-panel {
+    display: none;
+  }
+.check-container .react-tabs__tab-panel--selected {
+    display: block;
+    padding: 10px;
+    width: 740px;
+    height: 450px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #fff;
+  }
+
+.check-Explain{
+    padding:9px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Pretendard Regular';
+    margin-top: 10px;
+    text-align: center;
+    font-size:13px;
+}
+.colorpicker-palette-button{
+    justify-content: space-between;
+    flex-direction: column;
+}
+  
+.check-colorpicker{    
+    padding:20px;
+    margin-left:110px;
+}
+#check-palette-wrapper {
+    padding: 2px;
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px 90px; /* 각 컬럼의 크기를 100px로 고정 */
+    grid-template-rows: 140px; /* 행의 크기를 150px로 고정 */
+    grid-gap : 1px;
+}
+.check-palette-color-wrapper{
+    padding: 1.2rem;
+}
+.check-palette-color{
+    border : 1px solid #e7e7e7;
+    width: 90px;
+    height: 140px;
+    color: white;
+    cursor: pointer;
+    color: #aaa;
+}
+.check-palette-color.selected{
+    border: 2px solid black;
+    cursor:pointer;
+}
+.check-contrast-palette-color.selected {
+    border: 2px solid black; 
+  }
+
+.check-button{
+    background-color: #FE5E54;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top:25px;
+    margin-left: 85%;
+    font-family: 'Pretendard Medium';
+}
+
+.checklist{
+    margin-left:2%;
+}
+
+.check-examples button{
+    border :solid 1.5px #FFBCAE;
+    background-color: #fff;
+    padding: 5px 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 30px;
+    font-family:'Pretendard Medium';
+}
+.check-examples button.selected{
+    background-color:#FFBCAE;
+    border :solid 1px #FFBCAE;
+}
+.color-example-part1{
+    display:flex;
+    justify-content: center;
+    margin-top:7%;
+}
+.color-example-part{
+    display:flex;
+    justify-content: center;
+    margin-top:2%;
+}
+.color-random-button-part{
+    margin-left:1%;
+    margin-top:38%;
+}
+.color-random-button{
+    margin-bottom: 5px;
+    background-color: #FE5E54;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Pretendard Medium';
+}
+.color-random-button-explain{
+    padding: 9px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    display: none;
+    font-family: 'Pretendard Regular';
+    font-size:11px;
+}
+
+.color-random-button-part:hover .color-random-button-explain {
+    display: block;
+  }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 10px; 
+}
+.grid-item {
+    border: 1px solid #ddd; 
+    padding: 10px; 
+}
+.check-color-contrast{
+    margin-top:13%;
+    margin-left:18%;
+}
+.check-contrast-palette-container{
+    display: flex;
+    align-items: center;
+}
+.check-contrast-palette-color{
+    width: 97px;
+    height: 97px;
+}
+
+.check-contrastRatios-part{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:8%;
+}
+.check-contrastRatio{
+    margin-left:20px;
+    margin-right:20px;
+    font-family: 'Pretendard Medium';
+    font-size:20px;
+}
+
+.reset{
+    margin-bottom: 5px;
+    background-color: #FE5E54;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Pretendard Medium';
+}
+
+.check-rgblind{
+   margin-top:8%;
+   margin-left:15%;
+}
+.protanopia-part{
+    margin-bottom:40px;
+}
+.protanopia{
+    margin-top:2px;
+}
+.tritanopia{
+    margin-top:2px;
+}
+.rgblind-title{
+    margin-top:5px;
+    margin-bottom:5px;
+    font-family: 'Pretendard Medium';
+    font-size:18px;
+}
+
+.check-question{
+    display:flex;
+    align-items: center;
+    margin-bottom:5%
+}
+.check-question-Explain{
+    padding: 8px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    display: none;
+    font-size:13px
+}
+.check-question-explain-title{
+    font-family: 'Pretendard SemiBold';
+    font-size:16px;
+    margin-bottom:0.5%;
+    margin-top:3%;
+}
+.check-question-explain-part{
+    font-family:'Pretendard Regular';
+    font-size:13px;
+    margin-bottom:3%;
+    text-align:center;
+
+}
+.check-question:hover .check-question-Explain{
+    display: block;
+}
+
+
+.reset-part{
+    display:flex;
+    align-items: center;
+    margin-left:1%;
+
+}
+.reset-Explain{
+    padding: 8px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    display: none;
+    font-family: 'Pretendard Regular';
+    font-size:13px;
+    margin-left:10%;
+}
+.reset-part:hover .reset-Explain {
+    display: block;
+}

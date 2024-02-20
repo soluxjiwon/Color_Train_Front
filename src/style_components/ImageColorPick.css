@@ -1,0 +1,118 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*이미지업로드*/
+.img-upload {
+    padding: 3px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right:7%;
+}
+.img-part{
+    margin-bottom:5px;
+}
+
+.img-display {
+    padding : 1px;
+    object-fit: contain;
+    width: 250px;
+    height: 350px;
+}
+.img-upload-bts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.image-upload-button {
+    background-color: #FE5E54;
+    border: none;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin:3px;
+    font-family: 'Pretendard Medium';
+}
+.image-upload-button:hover {
+    background-color: #FFBCAE;
+}
+
+/*eyedropper이미지*/
+.eyedropper-button{
+    height : 45px;
+    width :  45px;
+    border : 1px solid #cbcbcb;
+    border-radius : 10px;
+    padding : 10px;
+    cursor: pointer;
+    
+}
+.eyedropper-button:hover{
+    background: #EBEBEB;
+    color: black;
+}
+
+/*사용법 설명*/
+.imagepick-explain{
+    padding:10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border : 1px solid #FE5E54;
+    color: black;
+    font-family: 'Pretendard Regular';
+    margin-bottom:20px;
+}
+/*팔레트, 저장버튼, 점검버튼*/
+.palette-bts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left:10%;
+}
+/*팔레트*/
+.palette-color-wrapper{
+    padding: 1.2rem;
+}
+
+.palette-color{
+    border : 1px solid #e7e7e7;
+    width: 100px;
+    height: 150px;
+    color: white;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.big-border{
+    border: 1px solid black !important;
+    cursor: pointer;
+}
+
+/*저장, 점검버튼*/
+.button-image {
+    display: flex;
+    margin-left:75%;
+}
+.ImgColorSaveBt{
+    margin-right:5px;
+}
+
+.ImgColorCheckBt{
+    margin-left:5px;
+}
+
+/*구분선*/
+.image-palette-divider {
+    background-color: #ccc;
+    width: 1px;
+    height: 450px;
+  }

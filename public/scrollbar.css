@@ -1,0 +1,18 @@
+
+/* 전체 페이지의 스크롤바 커스텀 */
+
+html::-webkit-scrollbar {
+    width: 11px;  /* 스크롤바의 너비 */
+}
+
+html::-webkit-scrollbar-thumb {
+    height: 70%; /* 스크롤바의 길이 */
+    background: #cccccc; /* 스크롤바의 색상 */
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-track {
+    background: white;  /*스크롤바 뒷 배경 색상*/
+}

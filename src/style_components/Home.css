@@ -1,0 +1,136 @@
+.home{
+    text-align: center;
+}
+.home-title{
+    margin:80px;
+}
+.home-title div{
+    margin:10px;
+}
+.title1{
+    font-family: 'Pretendard Medium';
+    font-size:40px;
+}
+.title2{
+    font-family: 'Pretendard Bold';
+    font-size:50px;
+}
+
+
+.home-subtitle{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:60px;
+}
+.home-subtitle div{
+    margin-left:60px;
+    
+}
+.subtitle{
+    font-family: 'Pretendard Medium';
+    font-size:18px;
+}
+.subtitle div{
+    margin:10px;
+}
+
+
+.palette-use{
+    margin:80px;
+}
+.home-explain-title{
+    font-family: 'Pretendard SemiBold';
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-right:55%;
+}
+.explain-title-bar{
+    background-color: black;
+    width:8px;
+    height: 25px;
+    margin-right:20px;
+}
+.home-explain-title-font{
+    font-size:25px;
+}
+.palette-use-part{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:30px;
+    font-size:20px;
+}
+.palette-use-time{
+    margin-right:40px;
+}
+.palette-use-perfection{
+    margin-right:40px;
+}
+.palette-use-detail{
+    margin-top:15px;
+    font-family: 'Pretendard Medium';
+}
+
+
+.features-usage{
+    margin:80px;
+}
+
+
+.signup-explain{
+    margin:80px;
+}
+.signup-explain-title{
+    font-family: 'Pretendard SemiBold';
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-right:55%;
+}
+.signup-explain-title-bar{
+    background-color: black;
+    width:8px;
+    height: 25px;
+    margin-right:20px;
+}
+.signup-explain-title-font{
+    font-size:25px;
+}
+.signup-explain-part{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:30px;
+    font-size:20px;
+}
+.signup-explain-save{
+    margin-right:40px;
+}
+.signup-explain-detail{
+    margin-top:10px;
+    font-family: 'Pretendard Medium';
+}
+.homeSignupButton{
+    width:30%;
+    height:35px;
+    border: none;
+    font-family:'Pretendard SemiBold';;
+    color: white;
+    background-color:#FE5E54;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left:25px;
+}
+
+
+
+
+.home-divider{
+    background-color: #ccc;
+    width: 80%;
+    height: 1.5px;
+    margin-left:auto;
+    margin-right:auto;
+}

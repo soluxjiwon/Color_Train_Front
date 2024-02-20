@@ -1,0 +1,87 @@
+
+.Detail-Palette{
+    display: flex;
+    flex-direction: column;
+}
+.Detail-Palette-Colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Detail-Palette-Color{
+    width: 80px;
+    height: 95px;
+    border: 0.2px solid #e7e7e7;
+}
+.Detail-Palette-codes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Detail-Palette-Code{
+    width: 80px;
+    padding:3px;
+    font-family: 'Pretendard Regular';
+    background-color: #e7e7e7;
+    margin-top:3px;
+}
+.ColorCodeText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.Recommendation-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*한 행당 4개의 칸을 만듭니다.*/
+    grid-gap: 15px;
+    margin-top: 20px;
+}
+.Recommended-Palette{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Recommended-Palette-Color{
+    width: 45px;
+    height: 80px;
+    border: 0.2px solid #e7e7e7;
+}
+
+.save-check-close-bt{
+    display:flex;
+    justify-content: center;
+    margin-top:10px;
+    margin-left:25%;
+}
+.detailsavebt{
+  margin-right:10px;
+}
+
+.Detail-Palette-Tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Detail-Palette-Tag{
+    padding:3px;
+    font-family: 'Pretendard Regular';
+    background-color: #e7e7e7;
+    margin-top:3px;
+}
+
+.PaletteDetailModal::-webkit-scrollbar {
+    width: 11px;  /* 스크롤바의 너비 */
+}
+
+.PaletteDetailModal::-webkit-scrollbar-thumb {
+    height: 70%; /* 스크롤바의 길이 */
+    background: #cccccc; /* 스크롤바의 색상 */
+    background-clip: padding-box;
+    border: 3px solid transparent;
+    border-radius: 10px;
+}
+
+.PaletteDetailModal::-webkit-scrollbar-track {
+    background: white;  /*스크롤바 뒷 배경 색상*/
+}

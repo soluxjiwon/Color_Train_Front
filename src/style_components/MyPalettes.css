@@ -1,0 +1,87 @@
+
+.MyPalette-explain{
+    padding:10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Pretendard Regular';
+    text-align: center;
+    margin-top:1%;
+}
+.MyPalettes-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 한 행당 4개의 칸을 만듭니다. */
+    grid-gap: 15px;
+    margin-top: 20px;
+}
+.MyPalettes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.MyPalettes-colors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.MyPalettes-color{
+    width: 55px;
+    height: 90px;
+    border: 0.2px solid #e7e7e7;
+}
+
+
+.MyPalettes-tags{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding : 3px;
+}
+.MyPalettes-tag{
+    padding:4px;
+    font-family: 'Pretendard Regular';
+    background-color:#fff;
+    border : 1px solid #FFBCAE;
+    border-radius:10px;
+    margin-left:2px;
+}
+
+.MyPalettes-Full-tags{
+    padding: 10px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    color: black;
+    position: absolute;
+    display: none;
+    font-family: 'Pretendard Regular';
+    font-size:13px;
+}
+.MyPalettes-tags:hover .MyPalettes-Full-tags {
+    display: block;
+  }
+
+.loginPopUpMessage{
+    text-align: center;
+    padding:5px;
+    font-family: 'Pretendard Medium';
+    margin:20px;
+
+}
+.loginPopUpMessage-part{
+    font-size:20px;
+    margin:15px;
+}
+.loginPopUpMessage-buttons{
+    padding:5px;
+    margin-top:20px;
+}
+.loginPopUpMessage-button{
+    background-color: #FE5E54;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Pretendard Medium';
+    margin:10px;
+}
