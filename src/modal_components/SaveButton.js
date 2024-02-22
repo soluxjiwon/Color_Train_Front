@@ -59,7 +59,7 @@ function SaveButton(hexColors){
     const selectTagsAndSave = async (selectedTags) => {
         try {
            const response = await axios.post(
-              'http://localhost:5000/api/palettes/save',
+              'https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/save',
               {
                  title: 'Palette Title',
                  colors: hexColors.hexColors,

@@ -29,7 +29,7 @@
     const createPalette = () => {
       if (currentColor && selectedOption){
         axios
-          .post('http://localhost:5000/api/palettes/create-one',  {
+          .post('https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/create-one',  {
             type: selectedOption,
             hexColor: currentColor 
           })

@@ -1,11 +1,13 @@
 /*팔레트 점검*/
 import axios from 'axios';
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import ColorPicker from './ColorPicker';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import TypographySVG2 from '../svg_components/TypographySVG2.js';
 import PatternSVG2 from '../svg_components/PatternSVG2.js';
 import PosterSVG2 from '../svg_components/PosterSVG2.js';
+import PptSVG2 from '../svg_components/PptSVG2.js';
+import WebSVG2 from '../svg_components/WebSVG2.js';
 import { checkColors } from '../color-checker.js';
 import '../style_components/Check.css';
 
@@ -54,7 +56,7 @@ export default function Check() {
     //팔레트 이미지화 API 연결
     const changePaletteToImage=()=>{
       axios
-        .post('http://localhost:5000/api/palettes/checkPalette',{palette:listColor})
+        .post('https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/checkPalette',{palette:listColor})
         .then((response)=>{
           setImgUrl(response.data.imgUrl);
         })
@@ -163,6 +165,18 @@ export default function Check() {
                     >
                       포스터
                     </button>
+                    <button
+                      className={`color-example-button${selectedOption === "ppt" ? ' selected' : ''}`}
+                      onClick={() => handleButtonClick("ppt")}
+                    >
+                      피피티
+                    </button>
+                    <button
+                      className={`color-example-button${selectedOption === "web" ? ' selected' : ''}`}
+                      onClick={() => handleButtonClick("web")}
+                    >
+                      웹사이트
+                    </button>
                   </div>
                   <div>
                     {selectedOption === "typography" && (
@@ -189,6 +203,24 @@ export default function Check() {
                         <div className="color-random-button-part">
                           <button className="color-random-button" onClick={handleRadomColorBt}>색상 랜덤 적용</button>
                           <div className="color-random-button-explain">버튼을 누르면 색상을 랜덤으로 지정할 수 있습니다.</div>
+                        </div>
+                      </div>
+                    )}
+                    {selectedOption === "ppt" && (
+                      <div className="example-part">
+                        <PptSVG2 hexColors={randomColors} />
+                        <div className="random-button-part">
+                          <button className="random-button" onClick={handleRadomColorBt}>색상 랜덤 적용</button>
+                          <div className="random-button-explain">버튼을 누르면 색상을 랜덤으로 지정할 수 있습니다.</div>
+                        </div>
+                      </div>
+                    )}
+                    {selectedOption === "web" && (
+                      <div className="example-part">
+                        <WebSVG2 hexColors={randomColors} />
+                        <div className="random-button-part">
+                          <button className="random-button" onClick={handleRadomColorBt}>색상 랜덤 적용</button>
+                          <div className="random-button-explain">버튼을 누르면 색상을 랜덤으로 지정할 수 있습니다.</div>
                         </div>
                       </div>
                     )}

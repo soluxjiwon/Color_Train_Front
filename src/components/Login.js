@@ -3,8 +3,6 @@ import React, { useEffect, useState } from 'react'
 import '../style_components/Login.css';
 
 function Login(){
-
-
     const [email, setEmail]=useState('');
     const [pw,setPw]=useState('');
 
@@ -50,7 +48,10 @@ function Login(){
             password: pw
           };
           axios
-          .post('http://localhost:5000/api/users/login', userData, { withCredentials: true })
+          .post('https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/users/login', userData,
+            {
+              withCredentials: true
+            })
           .then((response) => {
             if (response.data.loginSucess) {
               console.log('Login successful', response.data);
@@ -75,7 +76,7 @@ function Login(){
           }
         }
         const xhr = new XMLHttpRequest();
-          xhr.open('GET', 'http://localhost:5000', true);
+          xhr.open('GET', 'https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/', true);
           xhr.withCredentials = true;
           xhr.send(null);
 

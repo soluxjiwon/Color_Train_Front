@@ -60,7 +60,7 @@ function Signup(){
         }
 
         axios
-        .post('http://localhost:5000/api/users/register', {
+        .post('https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/users/register', {
           name: nickname,
           email: email,
           password: pw,

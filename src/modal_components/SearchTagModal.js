@@ -21,7 +21,7 @@ const modalStyle = {
       },
       content: {
         width: "1200px",
-        height: "525px",
+        height: "535px",
         zIndex: "150",
         position: "absolute",
         top: "50%",
@@ -58,7 +58,7 @@ function SearchTagModal({ setOpenModal, setCloseModal, putTagsSelected, putSearc
        {display: "차가운", value: "cold"}, {display: "쨍한", value: "bold"},
        {display: "밝은", value: "bright"}, {display: "어두운", value: "dark"},
        {display: "파스텔", value: "pastel"}, {display: "원색", value: "primary"},
-       {display: "로맨틱한", value: "romantic"}, {display: "펑키한", value: "funcky"}
+       {display: "로맨틱한", value: "romantic"}, {display: "펑키한", value: "funky"}
      ];
     const theme = [
         {display: "봄", value: "spring"}, {display: "여름", value: "summer"},
@@ -108,7 +108,7 @@ function SearchTagModal({ setOpenModal, setCloseModal, putTagsSelected, putSearc
     const handleSearch = async () => {
         try {
           const response = await
-            axios.get('http://localhost:5000/api/palettes/search',
+            axios.get('https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/search',
                   {params: { tags: valueTags.join(',') },});
 
             console.log('Tags sent to the API:', valueTags);

@@ -21,7 +21,7 @@ const modalStyle = {
       },
       content: {
         width: "1200px",
-        height: "525px",
+        height: "535px",
         zIndex: "150",
         position: "absolute",
         top: "50%",
@@ -46,7 +46,7 @@ function PaletteDetailModal({ paletteId, onClose }) {
     const getPaletteInf=async()=>{
         if(paletteId){
             axios
-             .get(`http://localhost:5000/api/palettes/${paletteId}`
+             .get(`https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/${paletteId}`
                 , { withCredentials: true })
              .then((response)=>{
                 setPaletteInf(response.data.palette)
@@ -63,7 +63,7 @@ function PaletteDetailModal({ paletteId, onClose }) {
                 const modOptions = ['color','style', 'theme'];
                 const mod = modOptions[Math.floor(Math.random() * modOptions.length)];
 
-                const response = await axios.post(`http://localhost:5000/api/palettes/recom/${paletteId}`,
+                const response = await axios.post(`https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/recom/${paletteId}`,
                     {mod : mod, withCredentials: true });
                 console.log(mod);
                 setRecommendPalettes(response.data.result);
@@ -75,7 +75,7 @@ function PaletteDetailModal({ paletteId, onClose }) {
     };
     const checkLoginStatus = async () => {
         try {
-            const response = await axios.get('http://localhost:5000/api/users/auth', { withCredentials: true });
+            const response = await axios.get('https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/users/auth', { withCredentials: true });
             const userData = response.data;
             setLoginInfo({
                 isLoggedIn: userData.isAuth,
@@ -110,17 +110,19 @@ function PaletteDetailModal({ paletteId, onClose }) {
             cute:'귀여운', retro: '레트로', funcky:'펑키한', energetic: '활동적인', vivacious:'발랄한', 
             tropical: '트로피컬', vintage: '빈티지', luxury: '고급스러운',calm: '정적인', natural: '자연적인',
             soft: '부드러운', neutral: '중성적인', happy: '행복한', warm: '따뜻한', cold: '차가운',
-            bold: '쨍한', bright: '밝은', dark: '어두운', pastel: '파스텔', primary: '원색의',
-            
+            bold: '쨍한', bright: '밝은', dark: '어두운', pastel: '파스텔', primary: '원색의', 
+            romantic:'로맨틱한', funky: '펑키한', 
+    
             spring:'봄', summer: '여름', autumn: '가을', winter: '겨울', christmas: '크리스마스',
             halloween: '할로윈', 
 
-            mono:'단일색', complementary:'보색', similar:'유사색', achromatic:'무채색',
+            mono:'단일색', complementary:'반대색', similar:'유사색', achromatic:'흑백',
 
-            redgreeb:'적록색맹', blueyellow:'청황색맹',
+            redgreen:'적록색맹', blueyellow:'청황색맹',
 
             red:'빨강', orange:'주황', yellow: '노랑', green:'초록', blue: '파랑', indigo: '남색',
-            purple: '보라', pink: '분홍',
+            purple: '보라', pink: '분홍', brown: '갈색', 
+
 
         }
         return translateToKorean[tag];

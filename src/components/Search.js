@@ -41,7 +41,7 @@ function Search(){
     useEffect(() => {
         const checkLoginStatus = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/palettes/auth', { withCredentials: true });
+                const response = await axios.get('https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/auth', { withCredentials: true });
                 const isUserLoggedIn = response.data.isAuth;
                 setIsLoggedIn(isUserLoggedIn);
             } catch (error) {
@@ -64,7 +64,7 @@ function Search(){
                 const mod = modOptions[Math.floor(Math.random() * modOptions.length)];
                 console.log(mod);
 
-            const response = await axios.post('http://localhost:5000/api/palettes/recent', 
+            const response = await axios.post('https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/recent', 
                 { mod: mod }, { withCredentials: true });
                 console.log(response.data.result);
                 setSearchResults(response.data.result);

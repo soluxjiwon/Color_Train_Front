@@ -19,8 +19,8 @@
     justify-content: center;
 }
 .Detail-Palette-Code{
-    width: 80px;
-    padding:3px;
+    width: 75px;
+    padding:2px;
     font-family: 'Pretendard Regular';
     background-color: #e7e7e7;
     margin-top:3px;
@@ -30,6 +30,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    background-color: #fff;
 }
 .Recommendation-list{
     display: grid;

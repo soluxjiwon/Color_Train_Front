@@ -45,7 +45,7 @@ function SearchSaveButton({paletteId, isLoggedIn, userId}){
         // 팔레트가 저장되어 있는지 확인하는 API 호출
         const checkSavedPalette = async () => {
           try {
-            const response = await axios.get(`http://localhost:5000/api/palettes/isSaved/${userId}/${paletteId}`, { withCredentials: true });
+            const response = await axios.get(`https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/isSaved/${userId}/${paletteId}`, { withCredentials: true });
             const isPaletteSaved = response.data.isSaved;
             setIsSaved(isPaletteSaved);
           } catch (error) {
@@ -64,7 +64,7 @@ function SearchSaveButton({paletteId, isLoggedIn, userId}){
         if(isLoggedIn){
             setIsSaved(true); 
             try{
-                const response =  await axios.post(`http://localhost:5000/api/palettes/${paletteId}`,
+                const response =  await axios.post(`https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/${paletteId}`,
                 {
 
                 }, { withCredentials: true });

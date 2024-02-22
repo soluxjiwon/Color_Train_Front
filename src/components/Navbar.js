@@ -15,7 +15,7 @@ function Navbar() {
   //로그인 여부 확인
   const checkLoginStatus= async ()=>{
     try {
-        const response = await axios.get('http://localhost:5000/api/users/auth', { withCredentials: true });
+        const response = await axios.get('https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/users/auth', { withCredentials: true });
         const isUserLoggedIn = response.data.isAuth;
         setIsLoggedIn(isUserLoggedIn);
         return isUserLoggedIn;
@@ -27,7 +27,7 @@ function Navbar() {
 
   const handleLogout = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/users/logout', { withCredentials: true });
+      const response = await axios.get('https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/users/logout', { withCredentials: true });
 
       if (response.status === 200) {
         setIsLoggedIn(false);

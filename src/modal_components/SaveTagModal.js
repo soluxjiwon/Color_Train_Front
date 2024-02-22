@@ -62,7 +62,7 @@ function SaveTagModal({setOpenModal, setCloseModal, saveTagsToApi}){
         {display: "차가운", value: "cold"}, {display: "쨍한", value: "bold"},
         {display: "밝은", value: "bright"}, {display: "어두운", value: "dark"},
         {display: "파스텔", value: "pastel"}, {display: "원색", value: "primary"},
-        {display: "로맨틱한", value: "romantic"}, {display: "펑키한", value: "funcky"}
+        {display: "로맨틱한", value: "romantic"}, {display: "펑키한", value: "funky"}
       ];
      const theme = [
          {display: "봄", value: "spring"}, {display: "여름", value: "summer"},
