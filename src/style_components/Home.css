@@ -46,6 +46,13 @@
     justify-content: center;
     margin-right:55%;
 }
+.features-usage-title{
+    font-family: 'Pretendard SemiBold';
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin-right:65%;
+}
 .explain-title-bar{
     background-color: black;
     width:8px;
@@ -55,6 +62,7 @@
 .home-explain-title-font{
     font-size:25px;
 }
+
 .palette-use-part{
     display:flex;
     align-items:center;

@@ -5,7 +5,7 @@ function TypographySVG({hexColors}){
     <svg 
 		xmlns="http://www.w3.org/2000/svg"	xmlnsXlink="http://www.w3.org/1999/xlink"
 		x="0px" y="0px"	viewBox="0 0 227.7 167.2" style={{ enableBackground: 'new 0 0 227.7 167.2' }}
-		xmlSpace="preserve" width="30%" height="30%">
+		xmlSpace="preserve" width="100%" height="100%">
     <style type="text/css">
       {`
 	  	.st0{fill:#FFFFFF;}

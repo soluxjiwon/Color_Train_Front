@@ -66,7 +66,7 @@ function MyPalettes(){
 
     const closeModal=()=>{
         setModalOpen(false);
-        window.location.href = '/App';
+        window.location.href = '/';
     };
 
     const handleYesBt=()=>{
@@ -90,7 +90,7 @@ function MyPalettes(){
             tropical: '트로피컬', vintage: '빈티지', luxury: '고급스러운',calm: '정적인', natural: '자연적인',
             soft: '부드러운', neutral: '중성적인', happy: '행복한', warm: '따뜻한', cold: '차가운',
             bold: '쨍한', bright: '밝은', dark: '어두운', pastel: '파스텔', primary: '원색의', 
-            romantic:'로맨틱한', funky: '펑키한', 
+            romantic:'로맨틱한',
     
             spring:'봄', summer: '여름', autumn: '가을', winter: '겨울', christmas: '크리스마스',
             halloween: '할로윈', 

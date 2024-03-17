@@ -5,7 +5,7 @@ function PatternSVG({hexColors}){
         <svg 
         version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
         x="0px" y="0px" viewBox="0 0 2000 2000" style={{enableBackground: 'new 0 0 2000 2000'}}
-        xmlSpace="preserve" width="23%" height="23%">
+        xmlSpace="preserve" width="100%" height="100%">
             <style type="text/css">
             {`
                 .st1{fill:${hexColors[0]};}

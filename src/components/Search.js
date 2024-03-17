@@ -54,21 +54,39 @@ function Search(){
     useEffect(() => {
         if (isLoggedIn) {
             getLatestPalette();
+        } else {
+            getAllPalette();
         }
     }, [isLoggedIn]);
 
+    const getAllPalette = async () =>{
+        try {
+            const page = 1;
+            const itemsNum = 20;
+    
+            const response = await axios.get(`https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/all?page=${page}`, { withCredentials: true });
+            setSearchResults(response.data.result);
+    
+        } catch (error) {
+            console.error('Error fetching all palettes:', error);
+        }
+    }
+
     const getLatestPalette = async () => {
         try {
-                //mod 랜덤 적용
-                const modOptions = ["color","style", "theme"];
-                const mod = modOptions[Math.floor(Math.random() * modOptions.length)];
-                console.log(mod);
-
-            const response = await axios.post('https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/recent', 
+            const page = 1;
+            const itemsNum = 20;
+    
+            // mod 랜덤 적용
+            const modOptions = ["color", "style", "theme"];
+            const mod = modOptions[Math.floor(Math.random() * modOptions.length)];
+            console.log(mod);
+    
+            const response = await axios.post(`https://port-0-color-train-server-am952nlsu6unuj.sel5.cloudtype.app/api/palettes/recent?page=${page}`, 
                 { mod: mod }, { withCredentials: true });
-                console.log(response.data.result);
-                setSearchResults(response.data.result);
-            } catch (error) {
+            setSearchResults(response.data.result);
+
+        } catch (error) {
             console.error(error);
         }
     };
@@ -124,23 +142,3 @@ function Search(){
 
 }
 export default Search;
-
-
-
-/*{recentPalette && (
-    <div className="recommendedPalette-list">
-        {recentPalette.map((palette, index)=>(
-            <div key={index} className="recommendedPalette-container" onClick={()=>handlePaletteClick(palette)}>
-                <div className="recommendedPalette-colors">
-                    {palette.colors.map((color,colorIndex)=>
-                        <div
-                            key={colorIndex}
-                            style={{backgroundColor:color}}
-                            className="recommendedPalette-color">
-                        </div>
-                    )}
-                </div>
-            </div>
-        ))}
-    </div>
-)}*/

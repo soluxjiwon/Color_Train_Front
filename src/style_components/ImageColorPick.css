@@ -63,9 +63,8 @@
 /*사용법 설명*/
 .imagepick-explain{
     padding:10px;
-    background-color: #ffffff;
+    background-color: #f2f2f2;
     border-radius: 5px;
-    border : 1px solid #FE5E54;
     color: black;
     font-family: 'Pretendard Regular';
     margin-bottom:20px;

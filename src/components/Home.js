@@ -51,9 +51,24 @@ function Home(){
             <div className="home-divider"></div>
 
             <div className="features-usage">
-                <div className="home-explain-title">
+                <div className="features-usage-title">
                     <div className="explain-title-bar"></div>
-                    <div className="home-explain-title-font">기능 및 사용법</div>
+                    <div className="home-explain-title-font">기능</div>
+                </div>
+                <div className="signup-explain-part">
+                    <div className="signup-explain-save">
+                        <img src="/search.png" alt="시간단축" width="200px" height="175px" />
+                        <div className="signup-explain-detail">팔레트 검색</div>
+                    </div>
+                    <div className="signup-explain-recom">
+                        <img src="/imagepick.png" alt="시간단축" width="200px" height="175px" />
+                        <img src="/colorpick.png" alt="시간단축" width="200px" height="175px" />
+                        <div className="signup-explain-detail">팔레트 생성</div>
+                    </div>
+                    <div className="signup-explain-recom">
+                        <img src="/confirm.png" alt="시간단축" width="200px" height="175px" />
+                        <div className="signup-explain-detail">팔레트 점검</div>
+                    </div>
                 </div>
             </div>
             
@@ -68,11 +83,11 @@ function Home(){
                 </div>
                 <div className="signup-explain-part">
                     <div className="signup-explain-save">
-
+                        <img src="/save.png" alt="시간단축" width="200px" height="175px" />
                         <div className="signup-explain-detail">컬러팔레트 저장</div>
                     </div>
                     <div className="signup-explain-recom">
-                        
+                        <img src="/recommend.png" alt="시간단축" width="200px" height="175px" />
                         <div className="signup-explain-detail">컬러팔레트 맞춤추천</div>
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import React from 'react';
 function PptSVG({hexColors}){
     return(
         <svg 
-		    xmlns="http://www.w3.org/2000/svg"viewBox="0 0 4007 2253.94" width="40%" height="40%">
+		    xmlns="http://www.w3.org/2000/svg"viewBox="0 0 4007 2253.94" width="200%" height="200%">
             <defs>
                 <style>
                 {`

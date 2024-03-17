@@ -145,7 +145,7 @@ export default function Check() {
 
               <TabPanel>
                 {/*색상 적용 예시*/}
-                <div className="color-example">
+                <div className="check-color-example">
                   <div className="check-examples">
                     <button
                       className={`color-example-button${selectedOption === "typography" ? ' selected' : ''}`}
@@ -207,7 +207,7 @@ export default function Check() {
                       </div>
                     )}
                     {selectedOption === "ppt" && (
-                      <div className="example-part">
+                      <div className="color-example-part">
                         <PptSVG2 hexColors={randomColors} />
                         <div className="random-button-part">
                           <button className="random-button" onClick={handleRadomColorBt}>색상 랜덤 적용</button>
@@ -216,7 +216,7 @@ export default function Check() {
                       </div>
                     )}
                     {selectedOption === "web" && (
-                      <div className="example-part">
+                      <div className="color-example-part">
                         <WebSVG2 hexColors={randomColors} />
                         <div className="random-button-part">
                           <button className="random-button" onClick={handleRadomColorBt}>색상 랜덤 적용</button>
