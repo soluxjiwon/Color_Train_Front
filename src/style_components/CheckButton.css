@@ -221,7 +221,8 @@
     color: black;
     position: absolute;
     display: none;
-    font-size:13px
+    font-size:13px;
+    width:33%;
 }
 .question-explain-title{
     font-family: 'Pretendard SemiBold';
@@ -233,8 +234,6 @@
     font-family:'Pretendard Regular';
     font-size:13px;
     margin-bottom:3%;
-    text-align:center;
-
 }
 .question:hover .question-Explain{
     display: block;

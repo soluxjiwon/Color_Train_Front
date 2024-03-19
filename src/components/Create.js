@@ -26,13 +26,13 @@ function Create() {
         <button 
           className={selectedOption === "onecolorcustom" ? "selected" : ""}
           onClick={() => handleOptionClick("onecolorcustom")}>
-            1색 커스텀
+            1색 생성
         </button>
         {/* Option 3: 5색 커스텀 */}
         <button
           className={selectedOption === "fivecolorcustom" ? "selected" : ""}
           onClick={() => handleOptionClick("fivecolorcustom")}>
-            5색 커스텀
+            5색 생성
         </button>
       </div>
       {selectedOption === "imagecolorpick" && <ImageColorPick />}

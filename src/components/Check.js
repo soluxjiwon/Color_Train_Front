@@ -252,23 +252,23 @@ export default function Check() {
                         웹 접근성이란? 
                       </div>
                       <div className="check-question-explain-part">
-                        장애인이나 고령자분들이 웹 사이트에서 제공하는 정보를 <br/>
+                        장애인이나 고령자분들이 웹 사이트에서 제공하는 정보를 
                         비장애인과 동등하게 접근하고 이용 할 수 있도록 보장하는 것
                       </div>
                       <div className="check-question-explain-title">
                         WCAG AA란?
                       </div>
                       <div className="check-question-explain-part">
-                        WCAG는 웹 콘텐츠 접근성 지침으로 장애가 있는 사용자가<br/>
-                        웹 콘텐츠에 더 쉽게 접근할 수 있도록 하는 국제 표준입니다.<br/>
+                        WCAG는 웹 콘텐츠 접근성 지침으로 장애가 있는 사용자가 
+                        웹 콘텐츠에 더 쉽게 접근할 수 있도록 하는 국제 표준입니다. 
                         배경색과 글자색의 명암비가 4.5 이상이 되면 WCAG의 AA기준을 충족합니다. 
                       </div>
                       <div className="check-question-explain-title">
                         사용법
                       </div>
                       <div className="check-question-explain-part">
-                       선택한 색이 글자색, 나머지 4개의 색이 배경색이 되어 4개의 명암비를 계산합니다<br/>
-                       배경색과 글자색의 명암비가 WCAG의 AA기준을 충족하면 초록색으로 출력합니다.<br/>
+                       선택한 색이 글자색, 나머지 4개의 색이 배경색이 되어 4개의 명암비를 계산합니다.
+                       배경색과 글자색의 명암비가 WCAG의 AA기준을 충족하면 초록색으로 출력합니다.
                       </div>
                     </div>
                   </div>

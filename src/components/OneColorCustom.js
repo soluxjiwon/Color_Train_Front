@@ -82,7 +82,7 @@
                 checked={selectedOption === 'complementary'}
                 onChange={handleOptionChange}
               />
-              보색
+              반대색
             </label>
           </div>
           <div className="picker-palette-divider"></div>
